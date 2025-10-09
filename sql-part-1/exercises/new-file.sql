@@ -27,3 +27,21 @@ SELECT original_title
 FROM [dbo].[books]
 WHERE original_publication_year
 BETWEEN 1914 AND 1921
+
+
+--The Book Tags TABLE
+--QUESTION ONE
+Select top 1000 *
+FROM [dbo].[book_tags]
+ORDER BY tag_id DESC
+
+--QUESTION TWO
+SELECT COUNT(GOODREADS_BOOK_ID)
+FROM [dbo].[book_tags]
+GROUP BY tag_id
+
+--QUESTION THREE
+SELECT COUNT(GOODREADS_BOOK_ID)
+FROM [dbo].[book_tags]
+GROUP BY tag_id
+AS books
