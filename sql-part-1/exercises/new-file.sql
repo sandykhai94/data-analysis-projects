@@ -1,0 +1,24 @@
+-- Question One
+SELECT COUNT(1000)
+FROM [BooksDB]
+
+-- QUESTION TWO
+SELECT COUNT(10000)
+-- from BooksDB
+WHERE title
+
+-- QUESTION THREE
+SELECT COUNT(*)
+FROM [BooksDB]
+WHERE PublicationYear < 1800
+
+-- QUESTION FOUR
+SELECT DISTINCT Author
+FROM [BooksDB]
+
+-- QUESTION FIVE
+SELECT BOOKS_COUNT(*)
+from [BooksDB]
+WHERE "eng" OR "eng-"
+
+-- QUESTION SIX
