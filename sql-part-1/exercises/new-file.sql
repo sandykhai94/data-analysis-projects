@@ -41,7 +41,51 @@ FROM [dbo].[book_tags]
 GROUP BY tag_id
 
 --QUESTION THREE
-SELECT COUNT(GOODREADS_BOOK_ID)
+SELECT COUNT(GOODREADS_BOOK_ID) AS BOOKS
 FROM [dbo].[book_tags]
 GROUP BY tag_id
-AS books
+
+--THE RATINGS TABLE
+--QUESTION ONE
+SELECT TOP 1000 *
+from [dbo].[ratings]
+order by book_id DESC
+
+--QUESTION TWO
+SELECT COUNT(USER_ID)
+FROM [dbo].[ratings]
+WHERE rating < 2;
+
+--QUESTION THREE
+SELECT SUM(book_id)
+FROM BooksDB.dbo.ratings
+WHERE rating >4;
+
+--The Tags Table
+--QUESTION ONE
+SELECT tag_name
+FROM [dbo].tags
+WHERE tag_name LIKE 'mystery%'
+OR tag_name LIKE '%mystery'
+OR tag_name LIKE '%mystery%'
+
+--QUESTION TWO
+SELECT *
+FROM BooksDB.dbo.tags
+WHERE tag_name < 'd' 
+AND tag_name >= 'c';
+--SELECTING ALL WHERE TAG NAME STARTS WITH LETTER C 
+
+--THE To Read Table
+--QUESTION ONE
+SELECT COUNT(book_id) as 'Total Books to Read'
+FROM [dbo].[to_read]
+GROUP BY [user_id]
+ORDER BY [user_id] ASC
+
+--QUESTION TWO
+SELECT COUNT(book_id) as 'Total Books to Read'
+FROM [dbo].[to_read]
+GROUP BY [user_id]
+ORDER BY 1 DESC
+
