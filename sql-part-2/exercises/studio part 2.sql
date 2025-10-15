@@ -29,9 +29,21 @@ WHERE LEFT(language_code, 2) <> 'EN'
 
 
 --QUESTIONS 6
-
+SELECT COUNT(title) 
+FROM BooksDB.DBO.books
+WHERE language_code NOT IN ('eng', 'eng', 'en-us', 'en-uk');
 
 
 --QUESTION 7
 SELECT CONCAT(title, ' by ', authors,' in ',language_code,' language.')
 FROM BooksDB.dbo.books
+
+
+--QUESTION 8 
+SELECT CONCAT(COALESCE(title, ''),' by ',COALESCE(authors, ''),' in ',COALESCE(language_code, ''),' language') AS book_description
+FROM BooksDB.dbo.books
+
+--QUESTION 9
+SELECT CONCAT(title, ' BY ', ISNULL(authors, 'unknown author'), ' in ', language_code, ' language') AS book_description
+FROM BooksDB.dbo.books
+
