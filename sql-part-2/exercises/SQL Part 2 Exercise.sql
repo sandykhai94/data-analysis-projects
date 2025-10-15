@@ -1,0 +1,23 @@
+--STRING FUNCTIONS
+
+--QUESTION 1
+SELECT RIGHT(Base_Name,3)
+FROM other_FHV_services_jan_aug_2015
+
+--QUESTION 2
+SELECT DATALENGTH(Number_of_Trips)
+FROM other_FHV_services_jan_aug_2015
+
+--DATE FUNCTIONS
+
+--QUESTION 1
+SELECT MONTH(Pick_Up_Date)
+FROM other_FHV_services_jan_aug_2015
+ORDER BY 
+
+--QUESTION 2
+SELECT
+FROM other_FHV_services_jan_aug_2015
+ORDER BY Pick_Up_Date DESC
+
+--AGGREGATE FUNCTIONS
