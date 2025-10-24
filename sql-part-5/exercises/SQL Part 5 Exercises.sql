@@ -1,11 +1,11 @@
--- CREATE TABLE sandy_khaithianthong.planned_makes (
---     Id INT,
--- Recipe_name VARCHAR (255),
---     Ingredients varchar (255),
---     Directions VARCHAR (255),
---     Prep_time INT,
---     Cook_time INT
--- )
+CREATE TABLE sandy_khaithianthong.planned_makes (
+    Id INT,
+Recipe_name VARCHAR (255),
+    Ingredients varchar (255),
+    Directions VARCHAR (255),
+    Prep_time INT,
+    Cook_time INT
+)
 
 -- Used these commands as helpers
 
