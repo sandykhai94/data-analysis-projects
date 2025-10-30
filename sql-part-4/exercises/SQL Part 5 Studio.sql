@@ -1,12 +1,12 @@
--- --PART A 
--- CREATE TABLE sep2025junkdb.sandy_khaithianthong.book (
---     book_id INT IDENTITY(1,1) PRIMARY KEY,
---     author_id INT,
---     title VARCHAR(255),
---     isbn INT,
---     available BIT,
---     genre_id INT
--- );
+--PART A 
+CREATE TABLE sep2025junkdb.sandy_khaithianthong.book (
+    book_id INT IDENTITY(1,1) PRIMARY KEY,
+    author_id INT,
+    title VARCHAR(255),
+    isbn INT,
+    available BIT,
+    genre_id INT
+);
 
 -- INSERT INTO Sep2025JunkDB.sandy_khaithianthong.book (author_id, title, isbn, available, genre_id)
 -- VALUES (2, 'A Midsummers Night Dream', 978149413, 1, 23)
@@ -432,10 +432,8 @@
 -- 2. Return all of the titles and the author's first and last names for books written by authors who are currently living.
 
 SELECT title, isbn 
-FROM sep2025junkdb.sandy_khaithianthong.book
-WHERE genre_id = '%Mystery%'
+FROM sandy_khaithianthong.book
+WHERE genre_id = 
 
 select *
-from 
-
-
+from sandy_khaithianthong.book
