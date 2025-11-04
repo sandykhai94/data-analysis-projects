@@ -1,0 +1,15 @@
+error: pathspec 'and' did not match any file(s) known to git
+error: pathspec 'Cond.' did not match any file(s) known to git
+error: pathspec 'Exercise' did not match any file(s) known to git
+error: pathspec '2
+git push
+git commit -m booleans' did not match any file(s) known to git
+error: pathspec 'and' did not match any file(s) known to git
+error: pathspec 'Cond.' did not match any file(s) known to git
+error: pathspec 'Exercise' did not match any file(s) known to git
+error: pathspec 'and' did not match any file(s) known to git
+error: pathspec 'cond.' did not match any file(s) known to git
+error: pathspec 'exercise' did not match any file(s) known to git
+error: pathspec '2
+'
+' did not match any file(s) known to git
