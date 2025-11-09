@@ -77,6 +77,6 @@ print(employees["E102"]["salary"])
 employees["E102"]["salary"] = 100000
 print(employees["E102"])
 
-#add location to values
+#add location to values for someone add by the key
 employees["E103"]["location"] = "remote"
 print(employees)
