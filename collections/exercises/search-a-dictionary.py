@@ -10,10 +10,13 @@ flavors = {
 }
 
 ## Set a variable called choice to the flavor you want to search for.
+choice = 'mint choclate chip'
 
 ## Use an if statement to check if choice is in the flavors dictionary.
+if choice in flavors:
 
 ## If it is, set another variable called cost to the value associated with choice.
+
 
 ## If it isn’t, set cost to 0.
 
